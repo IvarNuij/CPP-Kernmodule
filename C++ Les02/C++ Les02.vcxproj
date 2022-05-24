@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Elf.h" />
+    <ClInclude Include="inventory.h" />
     <ClInclude Include="NPC.h" />
     <ClInclude Include="Orc.h" />
   </ItemGroup>

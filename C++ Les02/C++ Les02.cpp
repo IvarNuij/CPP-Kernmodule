@@ -1,41 +1,39 @@
 #include <iostream>
 #include <string>
+#include <random>
 #include "Elf.h"
 #include "Orc.h"
 
+void PrintInfo(NPC npc)
+{
+	cout << npc.getName() << " is lvl:" << npc.getLvl() << "," << " hij heeft " << npc.getInv() << " bij zich" << endl;
+}
+
+int RandomStrenght() 
+{
+	srand();
+	int randomStrenght = rand() % 10 + 1;
+	return randomStrenght;
+}
+
 int main()
 {
-	Elf elf1 = Elf("Warrior", 10);
-	Elf elf2 = Elf("Bowman", 5);
+	//NPC's
+	Elf elf1 = Elf("Mellinor", RandomStrenght());
+	Elf elf2 = Elf("Heagenstijn", RandomStrenght());
 
-	Orc orc1 = Orc("Warrior", 15);
-	Orc orc2 = Orc("Child", 1);
+	Orc orc1 = Orc("Warrior", RandomStrenght());
+	Orc orc2 = Orc("Child", RandomStrenght());
 
-	cout << "A group of Elf's and Orc's Meet," << endl;
+	//Items
+	elf1.addItem("kip");
+	elf2.addItem("Boog");
+	orc1.addItem("Knuppel");
+	orc2.addItem("Helm");
 
-	cout << endl;
-	//Elf's
-	cout << "Elv's:" << endl;
-	cout << elf1.getName();
-	cout << " with power lvl:";
-	cout << elf1.getStrenght();
-	cout << " and," << endl;
-	cout << elf2.getName();
-	cout << " with power lvl:";
-	cout << elf2.getStrenght() << endl;
-
-	cout << endl;
-	//Orc's
-	cout << "Orc's:" << endl;
-	cout << orc1.getName();
-	cout << " with power lvl:";
-	cout << orc1.getStrenght();
-	cout << " and," << endl;
-	cout << orc2.getName();
-	cout << " with power lvl:";
-	cout << orc2.getStrenght();
-
-	cout << endl;
-	cout << endl;
-	cout << endl;
+	//Story
+	PrintInfo(elf1);
+	PrintInfo(elf2);
+	PrintInfo(orc1);
+	PrintInfo(orc2);
 }

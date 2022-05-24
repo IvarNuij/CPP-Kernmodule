@@ -13,30 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\NPC%27s">
+      <UniqueIdentifier>{e90d8927-61d4-4e78-a57a-79ae587dbfc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NPC%27s">
+      <UniqueIdentifier>{0af07b18-5fc6-4d35-a8b8-317e19f596c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C++ Les02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Elf.cpp">
+      <Filter>Source Files\NPC%27s</Filter>
+    </ClCompile>
     <ClCompile Include="NPC.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\NPC%27s</Filter>
     </ClCompile>
     <ClCompile Include="Orc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Elf.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\NPC%27s</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="NPC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Orc.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NPC%27s</Filter>
     </ClInclude>
     <ClInclude Include="Elf.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NPC%27s</Filter>
+    </ClInclude>
+    <ClInclude Include="inventory.h">
+      <Filter>Header Files\NPC%27s</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>Header Files\NPC%27s</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

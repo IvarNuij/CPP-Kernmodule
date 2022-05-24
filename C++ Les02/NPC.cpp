@@ -6,9 +6,15 @@ NPC::NPC(string Name, int Strenght)
 {
 	name = Name;
 	strenght = Strenght;
+	inv = new inventory();
 }
 
-int NPC::getStrenght()
+void NPC::addItem(string Item)
+{
+	inv->invVector.push_back(Item);
+}
+
+int NPC::getLvl()
 {
 	return(strenght);
 }
@@ -16,4 +22,9 @@ int NPC::getStrenght()
 std::string NPC::getName() 
 {
 	return(name);
+}
+
+string NPC::getInv()
+{
+	return inv->invVector[0];
 }
