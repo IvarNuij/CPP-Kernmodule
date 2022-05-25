@@ -2,11 +2,19 @@ using namespace std;
 #include "NPC.h"
 #include <string>
 
+//Constructor
 NPC::NPC(string Name, int Strenght)
 {
 	name = Name;
 	strenght = Strenght;
+	//Create inv
 	inv = new inventory();
+}
+
+//Destructor
+NPC::~NPC() 
+{
+	delete inv;
 }
 
 void NPC::addItem(string Item)
@@ -14,7 +22,7 @@ void NPC::addItem(string Item)
 	inv->invVector.push_back(Item);
 }
 
-int NPC::getLvl()
+int NPC::getStrenght()
 {
 	return(strenght);
 }

@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C++ Les02.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Elf.cpp" />
     <ClCompile Include="NPC.cpp" />
     <ClCompile Include="Orc.cpp" />

@@ -11,9 +11,13 @@ public:
 	inventory* inv;
 
 	//Functions
+	//Constructor
 	NPC(string Name, int Strenght);
+	//Destructor
+	~NPC();
+
 	void addItem(string Item);
-	int getLvl();
+	int getStrenght();
 	string getName();
 	string getInv();
 };

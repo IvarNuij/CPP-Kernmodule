@@ -21,7 +21,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++ Les02.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Elf.cpp">
@@ -41,11 +41,11 @@
     <ClInclude Include="Elf.h">
       <Filter>Header Files\NPC%27s</Filter>
     </ClInclude>
-    <ClInclude Include="inventory.h">
-      <Filter>Header Files\NPC%27s</Filter>
-    </ClInclude>
     <ClInclude Include="NPC.h">
       <Filter>Header Files\NPC%27s</Filter>
+    </ClInclude>
+    <ClInclude Include="inventory.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
